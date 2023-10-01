@@ -179,7 +179,6 @@ public class CallingActivity extends AppCompatActivity {
 
                         JitsiMeetConferenceOptions.Builder builder = new JitsiMeetConferenceOptions.Builder();
                         builder.setServerURL(serverURL);
-                        builder.setWelcomePageEnabled(false);
                         builder.setRoom(callingRoom);
 
                         if (callingType.equals("audio")) {

@@ -36,7 +36,7 @@
         app:queryBackground="@null"
         app:iconifiedByDefault="false"
         app:submitBackground="@null"
-        app:queryHint="Tìm kiếm bạn bè..."
+        app:queryHint="Search friend.."
 
         app:layout_constraintStart_toEndOf="@id/imageBack"
         app:layout_constraintTop_toTopOf="@id/imageBack"
@@ -90,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:textSize="@dimen/_12sdp"
         android:visibility="gone"
-        android:text="Chưa có người dùng nào"
+        android:text="No information"
         android:textColor="@color/error"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

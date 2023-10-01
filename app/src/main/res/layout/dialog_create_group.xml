@@ -26,14 +26,20 @@
             android:background="@drawable/background_trans"
             android:scaleType="centerCrop"/>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/primary"/>
+
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textThongBao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TẠO NHÓM MỚI"
-        android:textColor="@color/color_main_text"
+        android:text="NEW GROUP"
+        android:textStyle="bold"
+        android:textColor="@color/color_main"
         android:layout_marginTop="@dimen/_15sdp"
         android:textSize="@dimen/_13sdp"
         app:layout_constraintTop_toTopOf="@id/imageBackground"
@@ -57,7 +63,7 @@
         android:layout_width="@dimen/_270sdp"
         android:layout_height="@dimen/_40sdp"
         android:background="@drawable/background_trans_radius"
-        android:hint="Tên nhóm"
+        android:hint="Name of group"
         android:textColorHint="@color/hoi_trang_text"
         android:inputType="text"
         android:paddingEnd="@dimen/_16sdp"
@@ -83,9 +89,9 @@
         app:layout_constraintStart_toStartOf="@id/imageBackground"
         app:layout_constraintEnd_toStartOf="@id/btn_yes"
         android:textSize="@dimen/_9sdp"
-        android:textColor="@color/color_main_text"
+        android:textColor="@color/color_main"
         android:background="@drawable/background_button_transparent_white"
-        android:text="Khum, Hủy"/>
+        android:text="Cancel"/>
 
     <Button
         android:id="@+id/btn_yes"
@@ -102,6 +108,6 @@
         android:textSize="@dimen/_9sdp"
         android:textColor="@color/color_main_text"
         android:background="@drawable/background_button"
-        android:text="Tạo nhóm"/>
+        android:text="Create"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

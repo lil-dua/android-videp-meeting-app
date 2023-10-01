@@ -38,7 +38,7 @@
         android:paddingBottom="@dimen/_2sdp"
         android:textSize="@dimen/_15ssp"
         android:layout_marginLeft="@dimen/_10sdp"
-        android:text="Đăng bài đê"
+        android:text="New post"
         android:textColor="@color/color_main_text"
         android:fontFamily="sans-serif-medium" />
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:gravity="top|start"
-                android:hint="@string/thinking"
+                android:hint="What are you thinking?"
                 android:inputType="text|textMultiLine"
                 android:paddingLeft="@dimen/_10sdp"
                 android:singleLine="false"

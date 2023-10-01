@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_6sdp"
-        android:text="Chỉnh sửa thông tin cá nhân"
+        android:text="Edit user information"
         android:textColor="@color/color_main_text"
         android:textStyle="bold"
         android:textSize="@dimen/_15sdp"
@@ -55,7 +55,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHeight="@dimen/_222sdp"
+                    app:layout_constraintHeight="@dimen/_150sdp"
                     app:cardElevation="0dp"
                     app:cardCornerRadius="0dp">
 
@@ -65,7 +65,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/background_image_chat"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/background_profile" />
+                        android:src="@drawable/background_trans" />
 
                     <TextView
                         android:id="@+id/textAddImageBackground"
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Chọn ảnh bìa"
+                        android:text="Add background image"
                         android:paddingBottom="@dimen/_2sdp"
                         android:paddingTop="@dimen/_2sdp"
                         android:paddingStart="@dimen/_8sdp"
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textStyle="bold"
-                    android:text="Ảnh đại diện"
+                    android:text="Add image"
                     android:paddingBottom="@dimen/_2sdp"
                     android:paddingTop="@dimen/_2sdp"
                     android:paddingStart="@dimen/_8sdp"
@@ -167,7 +167,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Giới thiệu về bản thân"/>
+                    android:text="Description"/>
 
                 <EditText
                     android:id="@+id/inputName"
@@ -196,7 +196,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Tên tài khoản"/>
+                    android:text="Username"/>
 
                 <EditText
                     android:id="@+id/inputEmail"
@@ -254,7 +254,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Mật khẩu"/>
+                    android:text="Password"/>
 
                 <EditText
                     android:id="@+id/inputConfirmPassword"
@@ -283,7 +283,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Nhập lại mật khẩu"/>
+                    android:text="Confirm password"/>
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/seePassword"
@@ -338,7 +338,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Số điện thoại"/>
+                    android:text="Phone"/>
 
                 <EditText
                     android:id="@+id/inputBirthDay"
@@ -367,7 +367,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Sinh nhật"/>
+                    android:text="Date of birth"/>
 
                 <EditText
                     android:id="@+id/inputGender"
@@ -397,12 +397,10 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="italic"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:text="Giới tính"/>
+                    android:text="Gender"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
         </ScrollView>
 
@@ -410,7 +408,7 @@
         android:id="@+id/buttonChange"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_44sdp"
-        android:text="Cập nhật thông tin"
+        android:text="Update information"
         android:textAllCaps="false"
         android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/background_button_no_radius"

@@ -14,7 +14,7 @@
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhật ký"
+        android:text="HOME"
         android:textColor="@color/color_main_text"
         android:layout_marginStart="@dimen/_20sdp"
         android:textSize="@dimen/_17ssp"
@@ -27,7 +27,7 @@
         android:id="@+id/imageAddStory"
         android:layout_width="@dimen/_30sdp"
         android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:padding="@dimen/_6sdp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/background_icon"
@@ -40,19 +40,20 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_9sdp"
-        android:background="@drawable/background_content_bottom"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:background="@drawable/background_content_top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/storyRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:clipToPadding="false"
             android:orientation="vertical"
             android:overScrollMode="never"
-            android:paddingTop="@dimen/_3sdp"
+            android:paddingTop="@dimen/_5sdp"
             android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
@@ -65,9 +66,10 @@
         android:layout_gravity="end|bottom"
         app:tint="@color/white"
         android:backgroundTint="@color/color_main"
-        android:src="@drawable/ic_add"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/ic_post_add"
+        android:layout_marginBottom="@dimen/_70sdp"
         android:layout_marginRight="@dimen/_10sdp"
+        app:borderWidth="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 

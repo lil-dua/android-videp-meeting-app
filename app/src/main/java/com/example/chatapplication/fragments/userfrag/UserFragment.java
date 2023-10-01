@@ -70,6 +70,7 @@ public class UserFragment extends Fragment {
 
     private void setListeners() {
         binding.imageSignOut.setOnClickListener(v -> signOut());
+        binding.textLogout.setOnClickListener(v -> signOut());
         binding.userProfile.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), ProfileActivity.class);
             intent.putExtra("user", user);

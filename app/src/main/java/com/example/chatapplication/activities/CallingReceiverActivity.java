@@ -111,7 +111,6 @@ public class CallingReceiverActivity extends AppCompatActivity {
 
                             JitsiMeetConferenceOptions.Builder builder = new JitsiMeetConferenceOptions.Builder();
                             builder.setServerURL(serverURL);
-                            builder.setWelcomePageEnabled(false);
                             builder.setRoom(getIntent().getStringExtra(Constants.REMOTE_MSG_CALLING_ROOM));
 
                             if (callingType.equals("audio")) {

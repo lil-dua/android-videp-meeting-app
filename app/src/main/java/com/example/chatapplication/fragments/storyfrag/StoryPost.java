@@ -59,13 +59,7 @@ public class StoryPost extends AppCompatActivity {
         database = FirebaseFirestore.getInstance();
         preferenceManager = new PreferenceManager(getApplicationContext());
 
-        setData();
         setListener();
-    }
-
-    private void setData() {
-        binding.thinking.setText("Tạo bài viết");
-        binding.post.setText("Đăng ");
     }
 
     private void setListener() {

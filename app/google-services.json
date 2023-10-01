@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "217243749264",
-    "project_id": "chat-applications-71753",
-    "storage_bucket": "chat-applications-71753.appspot.com"
+    "project_number": "327587075891",
+    "project_id": "social-app-cbd4d",
+    "storage_bucket": "social-app-cbd4d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:217243749264:android:3e5361d116f10e37d10115",
+        "mobilesdk_app_id": "1:327587075891:android:ee3b671afc6977bace1046",
         "android_client_info": {
           "package_name": "com.example.chatapplication"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "217243749264-9qaob2s7vrl0dsecsjsleplb96fafb02.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA-6X176Y-ZXGPb9NL0J3m9Vnm5N96Q3Q4"
+          "current_key": "AIzaSyAcnV7YQ32wF-deNgx7e-mAIAgi2z8OBRo"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "217243749264-9qaob2s7vrl0dsecsjsleplb96fafb02.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

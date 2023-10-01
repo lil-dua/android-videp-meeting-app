@@ -1,22 +1,16 @@
 package com.example.chatapplication.fragments.friendsfrag;
 
-import android.app.Activity;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.chatapplication.R;
-import com.example.chatapplication.activities.ChatActivity;
 import com.example.chatapplication.activities.SearchActivity;
 import com.example.chatapplication.adapters.FriendFragmentAdapter;
 import com.example.chatapplication.databinding.FragmentFriendsBinding;
@@ -63,18 +57,18 @@ public class FriendsFragment extends Fragment {
         binding.viewPager.setAdapter(friendFragmentAdapter);
         new TabLayoutMediator(binding.tabLayout, binding.viewPager, (tab, position) -> {
             if (position == 0) {
-                tab.setText("Bạn bè");
+                tab.setText("Friends");
             }
             if (position == 1) {
-                tab.setText("Nhóm");
+                tab.setText("Groups");
             }
             if (position == 2) {
-                tab.setText("Lời mời");
+                tab.setText("Invites");
                 FirebaseFirestore database = FirebaseFirestore.getInstance();
                 database.collection(Constants.KEY_COLLECTION_USERS).document(preferenceManager.getString(Constants.KEY_USER_ID)).collection(Constants.KEY_COLLECTION_REQUEST_FRIENDS).get().addOnCompleteListener(task1 -> {
                     int countRequests = 0;
                     if (task1.isSuccessful() && !task1.getResult().isEmpty()) {
-                        for (QueryDocumentSnapshot queryDocumentSnapshot : task1.getResult()) {
+                        for (QueryDocumentSnapshot ignored : task1.getResult()) {
                             countRequests++;
                         }
                         if (countRequests != 0) {

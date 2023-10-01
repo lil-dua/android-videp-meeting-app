@@ -44,19 +44,19 @@ public class MainActivity extends BaseActivity  {
         setContentView(binding.getRoot());
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, mainFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, storyFragment).commit();
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.action_home:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, mainFragment).commit();
+                case R.id.action_story:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, storyFragment).commit();
                     getFriendRequests();
                     return true;
                 case R.id.action_friends:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, friendsFragment).commit();
                     getFriendRequests();
                     return true;
-                case R.id.action_story:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, storyFragment).commit();
+                case R.id.action_home:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, mainFragment).commit();
                     getFriendRequests();
                     return true;
                 case R.id.action_user:

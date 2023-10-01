@@ -22,7 +22,6 @@ public class SignInActivity extends AppCompatActivity {
 
     private ActivitySignInBinding binding;
     private PreferenceManager preferenceManager;
-    private int seePass = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +44,6 @@ public class SignInActivity extends AppCompatActivity {
         binding.buttonSignIn.setOnClickListener(v -> {
             if (isValidSignInDetails()) {
                 signIn();
-            }
-        });
-
-        binding.seePassword.setOnClickListener(v -> {
-            if (seePass == 0) {
-                binding.inputPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                seePass = 1;
-            } else {
-                binding.inputPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                seePass = 0;
             }
         });
 

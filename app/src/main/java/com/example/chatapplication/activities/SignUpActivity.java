@@ -2,7 +2,6 @@ package com.example.chatapplication.activities;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -12,35 +11,26 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.util.Base64;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.chatapplication.R;
 import com.example.chatapplication.databinding.ActivitySignUpBinding;
 import com.example.chatapplication.utilities.Constants;
 import com.example.chatapplication.utilities.PreferenceManager;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.regex.Pattern;
 
 public class SignUpActivity extends AppCompatActivity {
 
     private ActivitySignUpBinding binding;
     private String encodedImage, encodedImageBackground;
     private PreferenceManager preferenceManager;
-    private int seePass = 0, seeConfirmPass = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,25 +68,6 @@ public class SignUpActivity extends AppCompatActivity {
             pickImage.launch(intent);
         });
 
-        binding.seePassword.setOnClickListener(v -> {
-            if (seePass == 0) {
-                binding.inputPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                seePass = 1;
-            } else {
-                binding.inputPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                seePass = 0;
-            }
-        });
-
-        binding.seeConfirmPassword.setOnClickListener(v -> {
-            if (seeConfirmPass == 0) {
-                binding.inputConfirmPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                seeConfirmPass = 1;
-            } else {
-                binding.inputConfirmPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                seeConfirmPass = 0;
-            }
-        });
     }
 
     private void showToast(String message) {
