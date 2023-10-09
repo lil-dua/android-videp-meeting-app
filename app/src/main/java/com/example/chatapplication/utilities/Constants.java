@@ -92,7 +92,7 @@ public class Constants {
 
     public static HashMap<String, String> getRemoteCallingHeaders() {
         HashMap<String, String> remoteCallingHeaders = new HashMap<>();
-        remoteCallingHeaders.put(Constants.REMOTE_MSG_CALLING_AUTHORIZATION, "key=AAAATEW2FzM:APA91bH3N0gwCPPxy8sIDIktMmkvg-7DAbpT4_i_qYOBBw8PwMOTfga4M9c_s4bWsdgIXLmdUbGDVw1VNAPXMVevDDeF5vcwPaaRArhSvsecll-QKNfm5Jx0WzMYzQ5r3aec7aZXp6_l");
+        remoteCallingHeaders.put(Constants.REMOTE_MSG_CALLING_AUTHORIZATION, "key=AAAATEW2FzM:APA91bHAxjWOQKrl6KApij8IWGk55i3MlIHxA-8AI8RSOoDSt_3PL8K78eF2lNVz-aeThT_n_-WmLsLyMPnEnrK2S2MuV1MqnF8GlUgOA2c2jK-3KLCAiH9nS-MGg00aF2PuGSRxF6SP");
         remoteCallingHeaders.put(Constants.REMOTE_MSG_CALLING_CONTENT_TYPE, "application/json");
 
         return remoteCallingHeaders;
